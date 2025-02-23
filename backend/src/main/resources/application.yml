@@ -1,0 +1,27 @@
+spring:
+  application:
+    name: backend
+  datasource:
+    url: jdbc:postgresql://localhost:5432/db
+    username: user
+    password: password
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    database: postgresql
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+server:
+  port: 8080
+logging:
+  level:
+    org:
+      springframework:
+        security: DEBUG
+jwt:
+  secretKey: YOUR_SECRET_KEY
+  expiration:
+    accessToken: 7200000
+    refreshToken: 86400000
+frontend:
+  url: http://localhost:5173
