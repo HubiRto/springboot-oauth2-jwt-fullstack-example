@@ -1,4 +1,4 @@
-package eu.pomoku.backend.configs;
+package eu.pomoku.backend.security;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import jakarta.servlet.ServletException;
